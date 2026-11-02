@@ -4,6 +4,7 @@ const lba=document.getElementById('lba');
 const lbc=document.getElementById('lbc');
 const prev=document.getElementById('prev');
 const next=document.getElementById('next');
+lb.addEventListener('close',()=>{lb.scrollTop=0;lbc.scrollTop=0});
 let cur=0;
 function show(i){
   if(!ART.length)return;
@@ -11,7 +12,8 @@ function show(i){
   const o=ART[cur];
   lbt.textContent=o.title;lba.textContent=o.author;lbc.innerHTML=o.html||'';
   if(!lb.open)lb.showModal();
-  lb.scrollTop=0;
+  const top=()=>{lb.scrollTop=0;lbc.scrollTop=0;};
+  top();requestAnimationFrame(()=>{top();requestAnimationFrame(top)});
 }
 document.querySelectorAll('.card').forEach(c=>c.onclick=()=>show(+c.dataset.i));
 document.querySelector('.x').onclick=()=>lb.close();
