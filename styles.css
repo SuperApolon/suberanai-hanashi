@@ -7,7 +7,7 @@ header{text-align:center;padding:4.2rem 1.2rem 2rem}h1{font-size:clamp(2rem,6vw,
 .card:hover,.card:focus-visible{transform:translateY(-3px);box-shadow:0 14px 36px rgba(0,0,0,.5),0 0 0 1px var(--acc)}
 .card .t{font-size:1.12rem;letter-spacing:.04em;line-height:1.45}.card .a{color:var(--acc);font-size:.82rem;letter-spacing:.1em}
 .card .e{color:var(--mute);font-size:.86rem;line-height:1.7;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-dialog{border:0;padding:0;background:#12161f;color:var(--prose);border-radius:16px;max-width:min(720px,94vw);max-height:94vh;overflow:auto;position:relative}
+dialog{border:0;padding:0;background:#12161f;color:var(--prose);border-radius:16px;width:min(720px,94vw);max-width:min(720px,94vw);max-height:90vh;overflow:auto;position:fixed;inset:0;margin:auto}
 dialog::backdrop{background:rgba(4,6,10,.88);backdrop-filter:blur(5px)}
 .d{padding:2rem 1.7rem 1rem}.d h2{margin:0 0 .4rem;font-weight:400;letter-spacing:.06em;color:var(--ink);font-size:1.45rem}
 .d .a{color:var(--acc);margin:0 0 1.4rem;letter-spacing:.1em;font-size:.9rem}
