@@ -17,3 +17,5 @@ dialog nav{display:flex;justify-content:space-between;padding:.2rem 1rem 1.1rem}
 footer{text-align:center;color:var(--mute);padding:2rem;font-size:.76rem;letter-spacing:.2em}
 @media (max-width:640px){.grid{grid-template-columns:1fr}.d{padding:1.5rem 1.15rem .8rem}.story{font-size:1rem;line-height:1.95}}
 html:has(dialog[open]){overflow:hidden}
+
+.card .cv{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;margin-bottom:10px}.dcv{max-height:28vh;aspect-ratio:auto;width:100%;object-fit:cover;border-radius:10px;margin-bottom:12px}
